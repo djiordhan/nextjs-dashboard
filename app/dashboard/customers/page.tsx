@@ -1,9 +1,10 @@
-import Pagination from '@/app/ui/invoices/pagination';
-import Search from '@/app/ui/search';
 import Table from '@/app/ui/customers/table';
-import { lusitana } from '@/app/ui/fonts';
-import { Suspense } from 'react';
 import { fetchFilteredCustomers } from '@/app/lib/data';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Customers',
+};
 
 export default async function Page({
     searchParams,
